@@ -55,12 +55,12 @@
 
 # def wstaw(tab):
 #     for i in range(1, len(tab)):
-#         siu = tab[i]
+#         key = tab[i]
 #         j = i-1
-#         while j>=0 and siu < tab[j]:
+#         while j>=0 and key < tab[j]:
 #             tab[j+1] = tab[j]
 #             j -= 1
-#         tab[j+1] = siu
+#         tab[j+1] = key
 
 # # przyklad
                
@@ -72,13 +72,45 @@
 # start_time = time.time()
 # wstaw(tab)
 # end_time = time.time()
-# print("Czas wykonania sortowania to: ", end_time - start_time)
+# print("Czas wykonania sortowania dla zbioru ",ile," to: ", end_time - start_time)
 
 
-# sortowanie dziel i rządź
-tab1 = [1,3,5,7]
-tab2 = [2,4,6,8]
-def sortownia(arr1, arr2):
-    arr = arr1 + arr2
-    print(arr.sort())
-sortownia(tab1, tab2)
+# # sortowanie dziel i rządź
+# tab1 = [1,3,5,7]
+# tab2 = [2,4,6,8]
+# def sortownia(arr1, arr2):
+#     arr = arr1 + arr2
+#     print(arr.sort())
+# sortownia(tab1, tab2)
+
+# # wyszukiwanie szybkie
+
+# def quicksort(arr):
+#     if len(arr)<=1:
+#         return arr
+#     pivot = arr[0]
+#     lesser = [x for x in arr[1:] if x <= pivot]
+#     greater = [x for x in arr[1:] if x > pivot]
+#     return quicksort(lesser)+[pivot]+quicksort(greater)
+
+# print(quicksort([3,6,7,8,3,4,1]))
+
+# import random
+
+# def median(arr):
+#     return sorted([arr[0], arr[len(arr)//2], arr[-1]])[1]
+
+# def quicksort(arr):
+#     if len(arr)<=1:
+#         return arr
+#     pivot = median(arr)
+
+#     lesser = [x for x in arr[1:] if x <= pivot]
+#     greater = [x for x in arr[1:] if x > pivot]
+#     return quicksort(lesser)+[pivot]+quicksort(greater)
+
+# print(quicksort([3,6,7,8,3,4,1]))
+
+
+
+
