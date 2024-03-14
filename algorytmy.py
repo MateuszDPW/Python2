@@ -2,7 +2,7 @@
 # #wejscie: tablica (array)
 # #wyjscie: tablica (array)
 
-# tab = [2,5,8,1, 4, 3, 1,6,6,9]
+# tab = [2,5,8,1,4,3,1,6,6,9]
 # n = len(tab)
 # def sortujBabelkowo(tab, n):
 #     for i in range(n-1):
@@ -83,7 +83,7 @@
 #     print(arr.sort())
 # sortownia(tab1, tab2)
 
-# # wyszukiwanie szybkie
+# # sortowanie szybkie
 
 # def quicksort(arr):
 #     if len(arr)<=1:
@@ -111,6 +111,26 @@
 
 # print(quicksort([3,6,7,8,3,4,1]))
 
-
-
-
+# sortowanie przez scalanie
+# def merge_sort(arr):    
+#     if len(arr) <= 1    :      # base case
+#         return arr           
+#     else               :               # recursive case
+#         mid   = len(arr)//2       # find the mid point
+#         left  = merge_sort(arr[:mid])   # split array into two halves
+#         right = merge_sort(arr[mid:])   # do the same on the other half
+#         res = []              # create a new list to hold the merged result
+        
+#         i=j=0                     # set pointers for the lists
+#         while i < len(left) and j < len(right):
+#             if left[i]['value'] <= right[j]['value']:   
+#                 res.append(left[i])   # append the smaller one to the sorted part of the final list
+#                 i += 1             # move the pointer in the left list
+#             else:
+#                 res.append(right[j])  # append the larger one directly to the final list
+#                 j += 1              # move the pointer in the right list
+#         # add all remaining elements from both lists to the final list
+#         res += left[i:]
+#         res += right[j:]
+#         return res
+# print(merge_sort([3,6,7,8,3,4,1]))
