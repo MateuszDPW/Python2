@@ -1,0 +1,8 @@
+# Funkcja do obliczania przyszlej wartosci inwestycji z wykorzystaniem procentu składanego
+# parametry:
+# P (float): poczatkowa kwota główna
+# r (float): roczna stopa procentowa w formie dziesietnej
+# n (int): liczba okresow kapitalizacji rocznie
+# t (float): czas trwania inwestycji w latach
+
+# zwraca: float: przyszla wartosc inwestycji
